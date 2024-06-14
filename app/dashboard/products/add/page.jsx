@@ -20,7 +20,7 @@ const AddProductPage=()=>{
                  rows="16"
                  placeholder="Description"
                 ></textarea>
-                <button type="submit" className={styles.button}>Submit</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
     );    
