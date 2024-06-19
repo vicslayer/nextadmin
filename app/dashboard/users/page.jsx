@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-const UsersPage=()=>{
-    return(
-        <div>UsersPage</div>
-=======
 import { fetchUsers } from "@/app/lib/data"
 import Pagination from "@/app/ui/dashboard/pagination/pagination"
 import Search from "@/app/ui/dashboard/search/search"
@@ -11,7 +6,9 @@ import Image from "next/image"
 import Link from "next/link"
 const UsersPage = async ({searchParams})=>{
     const q= searchParams?.q || "";
-    const users = await fetchUsers(q);
+    const page= searchParams?.page || "1";
+
+    const {count,users} = await fetchUsers(q,page);
 
     return(
         <div className={styles.container}>
@@ -58,9 +55,8 @@ const UsersPage = async ({searchParams})=>{
                 </tbody>
 
             </table>
-            <Pagination />
+            <Pagination count={count} />
         </div>
->>>>>>> c43f0f1f4cdca6ced2a1a0676cc0796743d36ebe
     )
 }
 export default UsersPage

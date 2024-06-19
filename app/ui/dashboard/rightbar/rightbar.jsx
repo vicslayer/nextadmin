@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-import styles from "./rightbar.module.css"
-const RightBar= ()=>{
-    return (
-        <div className={styles.container}>RightBar</div>
-=======
 import { MdPlayCircleFilled, MdReadMore } from "react-icons/md";
 import styles from "./rightbar.module.css"
 import Image from "next/image"
@@ -46,7 +40,6 @@ const RightBar= ()=>{
             </div>
 
         </div>
->>>>>>> c43f0f1f4cdca6ced2a1a0676cc0796743d36ebe
     );
 };
 export default RightBar;
