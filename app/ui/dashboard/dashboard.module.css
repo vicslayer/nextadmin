@@ -1,5 +1,10 @@
 .container{
+<<<<<<< HEAD
     display:flex;        
+=======
+    display:flex; 
+    min-height: 100vh;       
+>>>>>>> c43f0f1f4cdca6ced2a1a0676cc0796743d36ebe
 }
 .menu{
     flex:1;

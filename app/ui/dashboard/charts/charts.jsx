@@ -1,6 +1,10 @@
 "use client"
 import styles from "./charts.module.css"
+<<<<<<< HEAD
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+=======
+import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+>>>>>>> c43f0f1f4cdca6ced2a1a0676cc0796743d36ebe
 
 const data = [
     {
@@ -57,10 +61,17 @@ const Charts= ()=>{
                     bottom: 5,
                 }}
                 >
+<<<<<<< HEAD
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" />
                 <YAxis />
                 <Tooltip />
+=======
+                
+                <XAxis dataKey="name" />
+                <YAxis />
+                <Tooltip contentStyle={{background:"#151c2c",border:"none"}} />
+>>>>>>> c43f0f1f4cdca6ced2a1a0676cc0796743d36ebe
                 <Legend />
                 <Line type="monotone" dataKey="visit" stroke="#8884d8" activeDot={{ r: 8 }} />
                 <Line type="monotone" dataKey="click" stroke="#82ca9d" />
