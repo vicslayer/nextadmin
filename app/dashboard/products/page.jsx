@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-const ProductsPage=()=>{
-    return(
-        <div>ProductsPage</div>
-    )
-}
-export default ProductsPage
-=======
 import styles from "@/app/ui/dashboard/products/products.module.css";
 import Pagination from "@/app/ui/dashboard/pagination/pagination";
 import Link from "next/link";
@@ -61,4 +53,3 @@ const ProductsPage=()=>{
     );
 };
 export default ProductsPage;
->>>>>>> c43f0f1f4cdca6ced2a1a0676cc0796743d36ebe
