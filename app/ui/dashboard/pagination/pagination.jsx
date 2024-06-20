@@ -12,8 +12,8 @@ const Pagination=({count})=>{
 
     const params = new URLSearchParams(searchParams);
 
-    const hasPrev=process.env.NEXT_PUBLIC_ITEMPERPAGE * (parseInt(page)-1) > 0;
-    const hasNext=process.env.NEXT_PUBLIC_ITEMPERPAGE * (parseInt(page)-1) + process.env.NEXT_PUBLIC_ITEMPERPAGE < count;
+    const hasPrev=parseInt(process.env.NEXT_PUBLIC_ITEMPERPAGE) * (parseInt(page)-1) > 0;
+    const hasNext=parseInt(process.env.NEXT_PUBLIC_ITEMPERPAGE) * (parseInt(page)-1) + parseInt(process.env.NEXT_PUBLIC_ITEMPERPAGE) < count;
       
     const handleChangePage=(type)=>{
         type==="prev" ? params.set("page",parseInt(page) -1) : params.set("page",parseInt(page) +1);
